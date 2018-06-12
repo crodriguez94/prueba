@@ -3,22 +3,23 @@ package com.rest.parking.parkingspringrestserviceh2.service;
 import java.util.List;
 
 import com.rest.parking.parkingspringrestserviceh2.model.Parking;
+import com.rest.parking.parkingspringrestserviceh2.model.ParkingDto;
 
-public interface ParkingService {
+public interface ParkingService{
 
-	List<Parking> findAll();
+	List<ParkingDto> findAll();
 	
-	Parking save(Parking parking);
+	ParkingDto save(ParkingDto parking);
 	
-	Parking update(long id, Parking newParking);
+	ParkingDto update(long id, ParkingDto newParking);
 	
-	List<Parking> findCompletesParkings();
+	List<ParkingDto> findCompletesParkings();
 	
-	List<Parking> findFreePlacesParkings();
+	List<ParkingDto> findFreePlacesParkings();
 	
-	List<Parking> findOpenParkingByDate(String openDay);
+	List<ParkingDto> findOpenParkingByDate(String openDay);
 	
-	Parking incrementFreePlaces(long id);
+	ParkingDto incrementFreePlaces(long id);
 	
-	Parking decrementFreePlaces(long id);
+	ParkingDto decrementFreePlaces(long id);
 }
