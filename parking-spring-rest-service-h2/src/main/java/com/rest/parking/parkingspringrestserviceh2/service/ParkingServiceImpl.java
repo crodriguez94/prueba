@@ -99,7 +99,7 @@ public class ParkingServiceImpl implements ParkingService,Mapper<Parking,Parking
 		      }).collect(Collectors.toList());
 			
 		} catch (ParseException e) {
-			throw new DateParseException("Parse date error");
+			throw new DateParseException("Parse date error. The format is dd.mm.yyyy:hh");
 		}
 	}
 	
