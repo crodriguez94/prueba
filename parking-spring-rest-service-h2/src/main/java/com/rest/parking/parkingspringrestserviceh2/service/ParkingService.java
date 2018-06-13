@@ -2,7 +2,6 @@ package com.rest.parking.parkingspringrestserviceh2.service;
 
 import java.util.List;
 
-import com.rest.parking.parkingspringrestserviceh2.model.Parking;
 import com.rest.parking.parkingspringrestserviceh2.model.ParkingDto;
 
 public interface ParkingService{
